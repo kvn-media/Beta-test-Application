@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andorid="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewNamaRencana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Rencana"
+        andorid:layout_constraintStart_toStartOf="parent"
+        andorid:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRencana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        andorid:layout_constraintTop_toBottomOf="@+id/textViewNamaRencana"
+        andorid:layout_constraintStart_toStartOf="parent"
+        android:ems="10">
+
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewSifatRencana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        andorid:layout_constraintStart_toStartOf="parent"
+        andorid:layout_constraintTop_toBottomOf="@+id/editTextRencana"
+        android:text="Sifat Rencana:" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSifatRencana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        andorid:layout_constraintStart_toStartOf="parent"
+        andorid:layout_constraintTop_toBottomOf="@+id/textViewSifatRencana"
+        android:text="Penting" />
+
+    <Button
+        android:id="@+id/buttonSimpanPenambahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sifat Penambahan Data"
+        andorid:layout_constraintStart_toStartOf="parent"
+        andorid:layout_constraintTop_toBottomOf="@+id/checkBoxSifatRencana" />
+
+    <Button
+        android:id="@+id/buttonBatal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Batal"
+        andorid:layout_constraintStart_toStartOf="parent"
+        andorid:layout_constraintTop_toBottomOf="@+id/buttonSimpanPenambahan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
